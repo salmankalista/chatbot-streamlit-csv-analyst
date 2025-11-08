@@ -110,7 +110,7 @@ with st.sidebar:
         st.rerun()
 
 # --- 3. Area Utama (Main Layout) ---
-st.title("📊 AI Data Analyst (Model Generator Kode)")
+st.title("📊 AI Chatbot Data Analyst (CSV Analyst)")
 
 if not st.session_state['api_key_valid']:
     st.info("🔑 Silakan masukkan Google API Key Anda di sidebar dan klik 'Cek API Key' untuk memulai.")
