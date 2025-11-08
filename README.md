@@ -40,14 +40,6 @@ If there is no requirements.txt, typical dependencies are:
 pip install streamlit pandas numpy python-dotenv openai
 ```
 
-Environment variables
-
-If the app calls an external LLM (e.g., OpenAI or Hugging Face), set the API key(s) in your environment or a .env file. Common environment variable names used by similar projects:
-- OPENAI_API_KEY
-- HUGGINGFACE_API_KEY
-
-Replace the names above with the actual variable names used in the code if they differ.
-
 Streamlit entrypoint
 
 Replace <entrypoint> below with the actual Streamlit entrypoint file (common names: app.py, main.py, streamlit_app.py). If you want, edit this README after verifying the filename in the repository.
