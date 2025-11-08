@@ -29,7 +29,7 @@ except ImportError as e:
     st.stop()
     
 # --- 1. Konfigurasi Halaman dan Session State ---
-st.set_page_config(layout="wide", page_title="📊 AI Data Analyst (Model Generator Kode)")
+st.set_page_config(layout="wide", page_title="📊 AI Chatbot Data Analyst (CSV Analyst)")
 
 # Inisialisasi session state
 if 'df' not in st.session_state:
@@ -152,7 +152,7 @@ for message in st.session_state['chat_history']:
         else:
             st.markdown(message.content)
 
-user_query = st.chat_input("Tulis pertanyaan atau perintah analisis... (misal: 'Tampilkan rata-rata penjualan per tahun')")
+user_query = st.chat_input("Tulis pertanyaan atau perintah analisis... (misal: 'Apa yang dapat kamu analisa dari data saya ?')")
 
 if user_query:
     logging.info(f"Menerima kueri baru dari user: {user_query}")
